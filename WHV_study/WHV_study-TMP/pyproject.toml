@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "solvis-whv-study"
+version = "0.1.0"
+description = "a simple single location analysis using solvis."
+authors = ["Chris Chamberlain <chrisbc@artisan.co.nz>"]
+license = "AGPL3"
+readme = "README.md"
+packages = [{include = "solvis_whv_study"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+solvis = {git = "https://github.com/GNS-Science/solvis.git", rev = "8daea15149ed4f77262ac14493f6b8b3161999da"}
+nzshm-model = {git = "https://github.com/GNS-Science/nzshm-model.git", rev = "03f7f5f2f7bdca559515e3a28fd843de9b47120d"}
+matplotlib = "^3.7.1"
+pandas = "^1.5.3"
+numpy = "^1.24.2"
+geopandas = "^0.12.2"
+nzshm-grid-loc = {git = "https://github.com/GNS-Science/nzshm-grid-loc", rev = "feature/update_geopandas"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
