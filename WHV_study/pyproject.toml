@@ -9,14 +9,19 @@ packages = [{include = "solvis_whv_study"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-solvis = {git = "https://github.com/GNS-Science/solvis.git", rev = "8daea15149ed4f77262ac14493f6b8b3161999da"}
 nzshm-model = {git = "https://github.com/GNS-Science/nzshm-model.git", rev = "03f7f5f2f7bdca559515e3a28fd843de9b47120d"}
 matplotlib = "^3.7.1"
 pandas = "^1.5.3"
 numpy = "^1.24.2"
 geopandas = "^0.12.2"
-nzshm-grid-loc = {git = "https://github.com/GNS-Science/nzshm-grid-loc", rev = "feature/update_geopandas"}
+solvis = {git = "https://github.com/GNS-Science/solvis.git", rev = "feature/14_WHV_study"}
 
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.12.0"
+black = "^23.3.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
