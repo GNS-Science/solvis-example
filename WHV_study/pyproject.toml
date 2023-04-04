@@ -9,12 +9,12 @@ packages = [{include = "solvis_whv_study"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-nzshm-model = {git = "https://github.com/GNS-Science/nzshm-model.git", rev = "03f7f5f2f7bdca559515e3a28fd843de9b47120d"}
+nzshm-model = "^0.2.0"
 matplotlib = "^3.7.1"
 pandas = "^1.5.3"
 numpy = "^1.24.2"
 geopandas = "^0.12.2"
-solvis = {git = "https://github.com/GNS-Science/solvis.git", rev = "feature/14_WHV_study"}
+solvis = "^0.6.0"
 
 
 [tool.poetry.group.dev.dependencies]
